@@ -1,6 +1,7 @@
 import React from "react";
 
 const MovieList = (props) => {
+  let FavouriteComponent = props.favouriteComponent;
   return (
     <>
       {props.movies.map((movie, index) => {
@@ -10,8 +11,11 @@ const MovieList = (props) => {
             key={index}
           >
             <img src={movie.Poster} alt="movie"></img>
-            <div className="overlay d-flex align-items-center justify-content-center">
-              Add To Favourites
+            <div
+              className="overlay d-flex align-items-center justify-content-center"
+              onClick={() => props.handleFavouritesClick(movie)}
+            >
+              <FavouriteComponent />
             </div>
           </div>
         );
