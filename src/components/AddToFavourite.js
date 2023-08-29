@@ -1,6 +1,6 @@
 import React from "react";
 
-const AddFavourite = () => {
+const AddFavourites = () => {
   return (
     <>
       <span className="mr-2">Add To Favourites</span>
@@ -8,7 +8,7 @@ const AddFavourite = () => {
         width="2em"
         height="1em"
         viewBox="0 0 16 16"
-        class="bi bi-heart-fill"
+        className="bi bi-heart-fill"
         fill="red"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -21,4 +21,4 @@ const AddFavourite = () => {
   );
 };
 
-export default AddFavourite;
+export default AddFavourites;
